@@ -177,4 +177,8 @@ footer{
     text-align: center;
     height: 100vh;
 }
-    
+
+.coviddash{
+    height: 150px;
+    width: 250px;
+}
