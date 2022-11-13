@@ -5,18 +5,23 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
-body{
-    /* background-image: url("Image/background-img.jpg");
+/* body{
+    background-image: url("Image/background-img.jpg");
     background-size: 1380px 880px;
-    background-image: no-repeat; */
-}
+    background-image: no-repeat;
+} */
 
-#homepage{
-    height: 100vh;
-    width: 100%;
-}
+/* with js */
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
 
 nav img{
     width: 80px;
@@ -30,6 +35,7 @@ nav{
     padding: 12px 6%;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul li{
@@ -68,6 +74,11 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 
+#homepage{
+    height: 100vh;
+    width: 100%;
+}
+
 .home-content h1{
     font-size: 50px;
     font-weight: 500;
@@ -76,19 +87,21 @@ nav ul li a:hover{
 .home-content h3{
     font-size: 25px;
     padding-bottom: 20px;
-    font-weight: 500;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
+
+.home-content h4{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
 
 .home-logo{
     height: 250px;
     width: 250px;
 }
 
-.home-content h4{
-    padding-bottom: 20px;
-    font-weight: 400;
-}
 .home-content{
     color: #303030;
     display: flex;
@@ -125,8 +138,9 @@ nav ul li a:hover{
     color: white;
     background-color: #303030;
     margin: 20px;
-    height: 80%;
+    height: 250px;
     width: 20%;
+    border-radius: 8px;
 }
 .me i{
     margin-bottom: 10px;
@@ -154,13 +168,19 @@ nav ul li a:hover{
     gap: 50px;
     margin-top: 30px;
 }
+.skill-name{
+    margin-top: 4px;
+    font-size: 8px;
+    text-transform: uppercase;
+}
 .skill-card{
     background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px 30px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 .skill-card i{
@@ -204,25 +224,32 @@ footer{
     height: auto;
 }
 
-.projectssss{
+/* .projectssss{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-    width: 100%;
+    background-color: bisque;
     margin: 20px;
-}
+} */
 
 .container2 {
+    min-width: 700px;
+    max-width: 700px;
     position: relative;
-    width: 100%;
+    margin: auto 0;
+    margin: 50px 0;
+    border-radius: 8px;
 }
 
 .container2 image {
     display: block;
-    width: 100%;
     height: auto;
+}
+.coviddash{
+    width: 100%;
 }
 
 .overlay {
@@ -231,15 +258,13 @@ footer{
     align-items: center;
     top: 0;
     bottom: 0;
-    left: 320px;
+    left: 0;
     right: 0;
-    height: 100%;
-    width: 49%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    border-radius: 8px;
+    background-color: rgba(48, 48, 48, 0.7);
 }
-
 .container2:hover .overlay {
     opacity: 1;
   }
@@ -249,54 +274,27 @@ footer{
     font-size: 20px;
   }
 
-.coviddash{
-    height: 50%;
-    width: 50%;
+  .overlay-btn{
+    background-color: white;
+    color: #303030;
+    border-style: solid;
+    border-color: #303030;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 8px;
+    transition: .4s;
+    cursor: pointer;
 }
+.overlay-btn:hover{
+    transform: scale(1.2);
+}
+
 .projectssss p{
-    padding: 16px;
+    margin-bottom: 12px;
+    padding: 0;
 }
-
-.projectssss .btn{
-    padding: 8px 16px;
-    margin-bottom: 16px;
-}
-
-/* .project-image{
-    position: relative;  
-    width: 100%; 
-}
-
-.project-overlay{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    width: 50%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-}
-
-.project-image:hover .project-overlay {
-    opacity: 1;
-  }
-
-.project-overlay a {
-    color: white;
-    font-size: 20px;
-  }
-
-.project-image image {
-    display: block;
-    width: 100%;
-    height: auto;
-} */
-
 .text {
     color: white;
     font-size: 20px;
@@ -307,4 +305,73 @@ footer{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+
+
+
+@media only screen and (max-width: 900px) {
+    /* homepage mobile */
+    .home-content h1{
+        font-size: 30px;
+    }
+    
+    .home-content h3{
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    
+    .home-content h4{
+        font-size: 12px;
+        padding: 4px 0;
+    }
+
+    /* what i do mobile */
+    .help{
+        flex-direction: column;
+        width: 800px;
+        height: 700px;
+        margin-top: 30px;
+        margin-bottom: 20em;
+    
+    }
+
+    /* skills mobile */
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 50px;
+        margin-top: 30px;
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+    .skill-card{
+        background-color: #303030;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 120px;
+        height: 120px;
+        border-radius: 5px;
+    }
+
+    /* projects mobile */
+    .container2 {
+        min-width: 280px;
+        max-width: 280px;
+        position: relative;
+        margin: auto 0;
+        margin: 50px 0;
+        border-radius: 8px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .overlay-btn{
+        font-size: 10px;
+        padding: 6px 20px;
+    }
+
   }
