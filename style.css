@@ -65,7 +65,7 @@ nav ul li a:hover{
     border: 2px solid transparent;
     font-weight: 500;
     padding: 10px 25px;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: .4s;
     cursor: pointer;
 }
@@ -140,7 +140,7 @@ nav ul li a:hover{
     margin: 20px;
     height: 250px;
     width: 20%;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 .me i{
     margin-bottom: 10px;
@@ -170,7 +170,7 @@ nav ul li a:hover{
 }
 .skill-name{
     margin-top: 4px;
-    font-size: 8px;
+    font-size: 5px;
     text-transform: uppercase;
 }
 .skill-card{
@@ -197,13 +197,7 @@ nav ul li a:hover{
     color: white;
 }
 
-footer{
-    background-color: #303030;
-    color: white;
-    padding: 20px;
-    font-size: 12px;
-    text-align: center;
-}
+
 
 #project{
     color: #303030;
@@ -216,11 +210,12 @@ footer{
 }
 
 .data-analyst{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    place-items: center;
+    width: 60%;
     height: auto;
 }
 
@@ -235,22 +230,31 @@ footer{
     margin: 20px;
 } */
 
+
+/* dapat same height and width si  container2 at coviddash*/
 .container2 {
-    min-width: 700px;
-    max-width: 700px;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 260px;
+    max-height: 260px;
     position: relative;
-    margin: auto 0;
-    margin: 50px 0;
-    border-radius: 8px;
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #858f94;
+}
+.coviddash{
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 260px;
+    max-height: 260px;
+    border-radius: 5px;
 }
 
 .container2 image {
     display: block;
     height: auto;
 }
-.coviddash{
-    width: 100%;
-}
+
 
 .overlay {
     position: absolute;
@@ -262,7 +266,7 @@ footer{
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: rgba(48, 48, 48, 0.7);
 }
 .container2:hover .overlay {
@@ -283,7 +287,7 @@ footer{
     border: 2px solid transparent;
     font-weight: 500;
     padding: 8px 25px;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: .4s;
     cursor: pointer;
 }
@@ -297,7 +301,7 @@ footer{
 }
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -307,7 +311,14 @@ footer{
     text-align: center;
   }
 
-
+  footer{
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10em;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -358,13 +369,31 @@ footer{
     }
 
     /* projects mobile */
+    .data-analyst{
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+        width: 100%;
+        height: auto;
+    }
     .container2 {
-        min-width: 280px;
-        max-width: 280px;
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 230px;
+        max-height: 230px;
         position: relative;
-        margin: auto 0;
-        margin: 50px 0;
-        border-radius: 8px;
+    
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px #858f94;
+    }
+    .coviddash{
+        min-width: 400px;
+        max-width: 400px;
+        min-height: 230px;
+        max-height: 230px;
+        border-radius: 5px;
     }
     .text{
         font-size: 12px;
