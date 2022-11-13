@@ -213,10 +213,10 @@ nav ul li a:hover{
     margin-top: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 40px 50px;
     place-items: center;
-    width: 60%;
     height: auto;
+    
 }
 
 /* .projectssss{
