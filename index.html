@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="script.js" defer></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <title>Portfolio website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,7 +12,7 @@
 <body>
     <!----Home Section Start---->
     <nav>
-        <img src="Image/mylogo.png">
+        <img src="mylogo.png">
         <ul>
             <li><a href="#homepage">home</a></li>
             <li><a href="#about">about</a></li>
@@ -21,6 +23,7 @@
         </ul>
     </nav>
 
+    <canvas class="background"></canvas>
     <div id="homepage">
         <div class="home-content">
             <h1>Hi, I am Gheve Mombay</h1>
@@ -61,26 +64,32 @@
 
             <div class="skill-card">
                 <img src="Image/excel.png">
+                <p class="skill-name">name</p>
             </div>
 
             <div class="skill-card">
                 <img src="Image/sql-server.png">
+                <p class="skill-name">name</p>
             </div>
 
             <div class="skill-card">
                 <i class="fa-brands fa-python"></i>
+                <p class="skill-name">name</p>
             </div>
 
             <div class="skill-card">
                 <i class="fa-brands fa-java"></i>
+                <p class="skill-name">name</p>
             </div>
 
             <div class="skill-card">
                 <i class="fa-brands fa-html5"></i>
+                <p class="skill-name">name</p>
             </div>
 
             <div class="skill-card">
                 <i class="fa-brands fa-css3-alt"></i>
+                <p class="skill-name">name</p>
             </div>
 
         </div>
@@ -109,7 +118,7 @@
                         <div class="text">
                             <p>Covid-DashBoard Data Using Tableau, SQL Server, and Excel</p>
                             <a href="https://public.tableau.com/app/profile/gheve.ezekiel.mombay/viz/PortfolioProject-Covid_16670308516060/Dashboard1">
-                                <button class="btn">Tableau</button>
+                                <button class="overlay-btn">Tableau</button>
                             </a>
                         </div>
                     </div>
@@ -120,8 +129,13 @@
                 <div class="container2">
                     <img src="Image/Bike-sales-dashboard.png" class="coviddash">
                     <div class="overlay">
-                        <p>Bike Sale Portfolio Project using Excel and Data Visualization</p>
-                        <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/Excel%20Project%20Dataset.xlsx"><button class="btn">Github</button></a>
+                        <div class="text">
+                            <p>Bike Sale Portfolio Project using Excel and Data Visualization</p>
+                            <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/Excel%20Project%20Dataset.xlsx">
+                                <button class="overlay-btn">Github</button>
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -130,18 +144,26 @@
                 <div class="container2">
                     <img src="Image/Philippines-Typhoon-DashBoard.png" class="coviddash">
                     <div class="overlay">
-                        <p>Philippine Typhoon Portfolio Project using Excel and Data Visualization</p>
-                        <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/typhonn-impacts.xlsx"><button class="btn">Github</button></a>
+                        <div class="text">
+                            <p>Philippine Typhoon Portfolio Project using Excel and Data Visualization</p>
+                        <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/typhonn-impacts.xlsx">
+                            <button class="overlay-btn">Github</button></a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="projectssss">
                 <div class="container2">
-                    <img src="Image/Bike-sales-visualization.png" class="coviddash">
+                    <img src="Image/Bike-sales-Correlation.png" class="coviddash">
                     <div class="overlay">
-                        <p>Bike Sale Portfolio Project using Jupyter Notebook in VSCode</p>
-                        <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/nashville-datacleaning.ipynb"><button class="btn">Github</button></a>
+                        <div class="text">
+                            <p>Bike Sale Portfolio Project using Jupyter Notebook in VSCode</p>
+                        <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/nashville-datacleaning.ipynb">
+                            <button class="overlay-btn">Github</button></a>
+                        </div>
+                        
                     </div>  
                 </div>
             </div>
@@ -150,8 +172,12 @@
                 <div class="container2">
                     <img src="Image/Correlation-Matrix-Movies.png" class="coviddash">
                     <div class="overlay">
-                        <p>Correlation Project Using Jupyter Notebook in VSCode</p>
-                        <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/Movies%20Correlation%20Project.ipynb"><button class="btn">Github</button></a>
+                        <div class="text">
+                            <p>Correlation Project Using Jupyter Notebook in VSCode</p>
+                        <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/Movies%20Correlation%20Project.ipynb">
+                            <button class="overlay-btn">Github</button></a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
