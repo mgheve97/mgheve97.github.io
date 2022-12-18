@@ -173,6 +173,10 @@ nav ul li a:hover{
     width: 70px;
     margin-bottom: 10px;
 }
+
+.me p{
+    font-size: 12px;
+}
 #skills{
     color: #303030;
     display: flex;
@@ -423,5 +427,8 @@ nav ul li a:hover{
         font-size: 10px;
         padding: 6px 20px;
     }
-
+    .java-project p{
+        margin-bottom: 12px;
+        padding: 0;
+    }
   }
