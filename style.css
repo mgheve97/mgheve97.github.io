@@ -110,11 +110,24 @@ nav ul li a:hover{
     text-transform: uppercase;
 }
 
-
 .home-content h4{
     padding-bottom: 20px;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-content h1{
+        font-size: 20px;
+    }
+    
+    .home-content h3{
+        font-size: 10px;
+    }
+
+    .home-content h4{
+        font-size: 8px;
+    }
+  }
 
 .home-logo{
     height: 250px;
@@ -149,6 +162,7 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 
+/* about */
 #about{
     width: 80%;
     margin: auto;
@@ -160,17 +174,14 @@ nav ul li a:hover{
     color: #1b1b1b;
     text-align: center;
 }
-.help{
-
+.about-wrapper{
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
     gap: 30px;
-    padding: 12px;
-    width: 100%;
-    height: 50%;
-
+    padding: 30px 40px;
 }
-.me{
+.about-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,21 +190,55 @@ nav ul li a:hover{
     color: white;
     background-color: #303030;
     border-radius: 5px;
+    height: 380px;
 }
-.me i{
+
+.about-item h4 {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    #about{
+        width: 100%;
+    }
+    
+  }
+
+@media only screen and (max-width: 600px) {
+    #about{
+        height: auto;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+  }
+
+
+.about-item i{
     margin-bottom: 10px;
     font-size: 50px;
 }
 
-.me img{
+.about-item img{
     height: 70px;
     width: 70px;
     margin-bottom: 10px;
 }
 
-.me p{
+.about-item p{
     font-size: 12px;
 }
+
+/* skills */
 #skills{
     color: #303030;
     display: flex;
@@ -208,6 +253,7 @@ nav ul li a:hover{
         height: auto;
     }
   }
+
 .skill-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -216,12 +262,6 @@ nav ul li a:hover{
     margin-top: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-    .skill-container{
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-  }
 .skill-name{
     margin-top: 4px;
     font-size: 8px;
@@ -234,6 +274,8 @@ nav ul li a:hover{
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    height: 150px;
+    width: 150px;
 }
 .skill-card i{
     color: white;
@@ -249,6 +291,18 @@ nav ul li a:hover{
     color: white;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    .skill-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .skill-card{
+        height: 100px;
+        width: 100px;
+    }
+  }
 
 
 #project{
@@ -301,6 +355,36 @@ nav ul li a:hover{
     max-height: 260px;
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 700px) {
+    #project{
+margin-top: 70px;
+    }
+    .data-analyst{
+        grid-template-columns: 1fr;
+        gap: 20;   
+    }
+    .container2 {
+        min-width: 280px;
+        max-width: 280px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+    .coviddash{
+        min-width: 280px;
+        max-width: 280px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .data-analyst{
+        grid-template-columns: 1fr;
+    }
+  }
+
+
 
 .container2 image {
     display: block;
@@ -373,8 +457,7 @@ nav ul li a:hover{
 }
 
 
-@media only screen and (max-width: 900px) {
-    /* homepage mobile */
+/* @media only screen and (max-width: 900px) {
     .home-content h1{
         font-size: 30px;
     }
@@ -389,7 +472,6 @@ nav ul li a:hover{
         padding: 4px 0;
     }
 
-    /* what i do mobile */
     .help{
         flex-direction: column;
         width: 800px;
@@ -399,7 +481,6 @@ nav ul li a:hover{
     
     }
 
-    /* skills mobile */
     .skill-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -420,7 +501,6 @@ nav ul li a:hover{
         border-radius: 5px;
     }
 
-    /* projects mobile */
     .data-analyst{
         margin-top: 3em;
         display: grid;
@@ -458,4 +538,4 @@ nav ul li a:hover{
         margin-bottom: 12px;
         padding: 0;
     }
-  }
+  } */
