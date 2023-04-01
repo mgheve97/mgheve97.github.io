@@ -2,16 +2,16 @@ window.onload = function() {
     Particles.init({
       selector: '.background',
       maxParticles: 70,
-      sizeVariations: 3,
+      sizeVariations: 10,
       speed: 1,
-      color: '#75C2FD',
-      minDistance: 120,
+      color: '#b1b1b1',
+      minDistance: 130,
       connectParticles: true, 
       responsive: [
         {
           breakpoint:  1000,
           options: {
-            maxParticles: 40,
+            maxParticles: 30,
           }
         },
         {
