@@ -1,285 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js" defer></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-        <title>Portfolio website</title>
-        <link rel="icon" type="image/png" href="Image/mylogo.png">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-    <body>
-        <!----Home Section Start---->
-        <nav>
-            <img src="Image/mylogo.png">
-            <ul>
-                <li><a href="#homepage">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="Gheve_Mombay_Resume.pdf" download><button class="btn">Resume</button></a></li>
-            </ul>
+    <!-- import javascript -->
+    <script src="script.js" defer></script>
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="image/mylogo.png">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#home" class="logo"><img src="Image/mylogo.png" class="logosize"></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#cert">Certificates</a>
+            <a href="#contact">Contact</a>
         </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome! </h3>
+            <h1>I am Gheve Mombay</h1>
+            <h3>A <span>Data Analyst</span></h3>
+            <p>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." <br>– Linus Torvalds</p>
 
-        <canvas class="background"></canvas>
-        <div id="homepage">
-            <div class="home-content">
-                <h1>Hi, I am Gheve Mombay</h1>
-                <h3>Java Developer / Data Analyst</h3>
-                <h4 style="color: #bc544b;"><i class="fa-solid fa-at"></i> gheve.mombay97@gmail.com</h4>
-                <h4 style="color: #bc544b;"><i class="fa-solid fa-location-dot"></i> Cavite, Philippines</h4>       
+            <div class="social-media">
+                <a href="https://github.com/mombaygheve97"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/mombaygheve97/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=gheve.mombay97@gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://twitter.com/mombaygheve"><i class='bx bxl-twitter'></i></a>
             </div>
+            <a href="File/Gheve_Mombay_Resume.pdf" download><button class="btn">Resume</button></a>
+        </div>
+
+        <div class="home-img">
+            <img src="image/Data-analyst-2.png" alt="">
+        </div>
+    </section>   
+
+    <!-- about section design-->
+    <section class="about" id="about">
+        <h2 class="heading">What I Do</h2>
+
+        <div class="whatido-container">
+
+            <div class="whatido-box">
+                <i class="fa-solid fa-user-secret"></i>
+                <h3>Data Analysis</h3>
+                <p>
+                    Exploring, Processing, Cleaning, and Visualizing data. 
+                </p>
+            </div>
+
+            <div class="whatido-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Development</h3>
+                <p>
+                    Developing programming code. Simple frontend and backend codes.
+                </p>
+            </div>
+
+            <div class="whatido-box">
+                <i class='bx bxs-brain'></i>
+                <h3>Continuous Learning</h3>
+                <p>
+                    Learning new software through self-learning and training. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section design-->
+    <section class="skills" id="skill">
+        <h2 class="heading">Skills / Tools</h2>
+
+        <div class="proficient-skill-container">
             
-        </div>
-
-        <!----About Section Start---->
-        <div id="about">
-            <h1 style="color: #A91B0D;">What I do</h1>
-            <div class="about-wrapper">
-                <div class="about-item">
-                    <img src="Image/data-collection.png">
-                    <h4 style="color: #bc544b;">Collecting Data</h4>
-                    <p>Collecting Data and Programming Language Knowledge to develop great Software and Datas</p>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <h2>Data Analytics</h2>
                 </div>
-                <div class="about-item">
-                    <img src="Image/data-process.png">
-                    <h4 style="color: #bc544b;">Software Development</h4>
-                    <p>Developing desktop application software and android application using Java.</p>
+            </div>     
+             
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxl-python'></i>
+                    <h2>Python</h2>
                 </div>
-                <div class="about-item">
-                    <img src="Image/data-dashboard.png">
-                    <h4 style="color: #bc544b;">Continuous Learning</h4>
-                    <p>Learning new skills and knowledge on an on-going basis.
-                    </p>
-                </div>
-            </div>
-        </div>
+            </div> 
 
-        <!---- Skills Section Start ---->
-        <div id="skills">
-            <h1 style="color: #A91B0D;">Skills</h1>
-
-            <div class="skill-container">
-
-                <div class="skill-card">
-                    <i class="fa-brands fa-java"></i>
-                    <p class="skill-name">JAVA</p>
-                </div>
-
-                <div class="skill-card">
-                    <img src="Image/sql-server.png">
-                    <p class="skill-name">SQL SERVER</p>
-                </div>
-
-                <div class="skill-card">
-                    <img src="Image/mysql.png">
-                    <p class="skill-name">MySQL</p>
-                </div>
-
-                <div class="skill-card">
-                    <img src="Image/excel.png">
-                    <p class="skill-name">MICROSOFT EXCEL</p>
-                </div>
-                
-                <div class="skill-card">
-                    <img src="Image/tableau-icon.png">
-                    <p class="skill-name">TABLEAU</p>
-                </div>
-                
-                <div class="skill-card">
-                    <i class="fa-brands fa-python"></i>
-                    <p class="skill-name">PYTHON</p>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5"></i>
-                    <p class="skill-name">HTML</p>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p class="skill-name">CSS</p>
-                </div>
-
-            </div>
-        </div>
-
-        <!---- Project Section Start---->
-        <div id="project">
-            <h1 style="margin-bottom: 70px; color: #A91B0D;">Projects</h1>
-            <h1>Java Project</h1>
-
-            <div class="data-analyst">
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/User-Administration.PNG" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>User Administration using Java Spring boot, JavaFX, Spring Web, Mysql</p>
-                                <a href="https://github.com/mombaygheve97/user-administration-project">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Bank-Withdraw-and-Deposit-Java.PNG" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Simple Bank Withdrawal and Deposit using Java</p>
-                                <a href="https://github.com/mombaygheve97/BankWithdrawalandDeposite">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/ordering-system-java.PNG" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Simple Ordering System using Java</p>
-                                <a href="https://github.com/mombaygheve97/breakfastcafe">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Guessing-Game-Java.PNG" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Simple Guessing Game using Java abd JavaFX</p>
-                                <a href="https://github.com/mombaygheve97/GuessingGameJava">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Java-Form-Validation-Project.PNG" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Java Form Validation Project using Spring Boot and JavaFX</p>
-                                <a href="https://github.com/mombaygheve97/Form_Validation_Project">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="icon-mssql"></i>
+                    <h2>MSSQL</h2>
                 </div>
             </div>
 
-            <h1 style="margin-top: 70px;">Data Analytics</h1>
-
-            <div class="data-analyst">
-
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Covid-DashBoard Data.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Covid-DashBoard Data Using Tableau, SQL Server, and Excel</p>
-                                <a href="https://public.tableau.com/app/profile/gheve.ezekiel.mombay/viz/PortfolioProject-Covid_16670308516060/Dashboard1">
-                                    <button class="overlay-btn">Tableau</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="fa-solid fa-file-csv"></i>
+                    <h2>Spreadsheet</h2>
                 </div>
+            </div>
 
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Bike-sales-dashboard.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Bike Sale Portfolio Project using Excel and Data Visualization</p>
-                                <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/Excel%20Project%20Dataset.xlsx">
-                                    <button class="overlay-btn">Github</button>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="cib-tableau"></i> 
+                    <h2>Tableau</h2>
+                </div>   
+            </div>
+
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Data Management</h2>
                 </div>
+            </div> 
 
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Philippines-Typhoon-DashBoard.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Philippine Typhoon Portfolio Project using Excel and Data Visualization</p>
-                            <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/blob/main/typhonn-impacts.xlsx">
-                                <button class="overlay-btn">Github</button></a>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h2>Data Visualization</h2>
                 </div>
+            </div> 
 
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/tweet-post-data-vis-project.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Tweet Post Data Visualization Project</p>
-                            <a href="https://public.tableau.com/app/profile/gheve.ezekiel.mombay/viz/TweetPost-DataVisualisationProject/Dashboard1">
-                                <button class="overlay-btn">Tableau</button></a>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxs-business' ></i>
+                    <h2>Business Analysis</h2>
                 </div>
+            </div> 
 
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Bike-sales-visualization.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Bike Sale Portfolio Project using Jupyter Notebook in VSCode</p>
-                            <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/nashville-datacleaning.ipynb">
-                                <button class="overlay-btn">Github</button></a>
-                            </div>
-                            
-                        </div>  
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>BigQuery</h2>
                 </div>
+            </div>
 
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class="cib-mysql"></i> 
+                    <h2>MySQL</h2>
+                </div>
+            </div>
 
-                <div class="projectssss">
-                    <div class="container2">
-                        <img src="Image/Correlation-Matrix-Movies.png" class="coviddash">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Correlation Project Using Jupyter Notebook in VSCode</p>
-                            <a href="https://github.com/mombaygheve97/PortfolioProjects/blob/main/Movies%20Correlation%20Project.ipynb">
-                                <button class="overlay-btn">Github</button></a>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxl-java'></i>
+                    <h2>Java</h2>
+                </div>
+            </div> 
+
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxl-html5'></i>
+                    <h2>HTML</h2>
+                </div>
+            </div> 
+
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxl-css3'></i>
+                    <h2>CSS</h2>
+                </div>
+            </div> 
+
+            <div class="proficient-skill-box">
+                <div class="iconbox">
+                    <i class='bx bxl-javascript'></i>
+                    <h2>JS</h2>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Project section design-->
+    <section class="techprojects" id="project">
+        <h2 class="heading">Projects</h2>
+        <div class="DA-container">
+            <div class="DA-box">
+                <div class="DA-box-mod">
+                    <img src="Image/Covid-DashBoard-Data.png" class="imgsizer">
+                    <h2>Covid Dashboard Project</h2>
+                    <p>Creating a data visualization project using Tableau Public. Excel and SQL for exploration and cleaning</p>
+                    <a href="https://public.tableau.com/app/profile/gheve.ezekiel.mombay/viz/PortfolioProject-Covid_16670308516060/Dashboard1"><button class="btn"><i class="cib-tableau tab-mod"></i>Tableau</button></a>
+                </div>
+            </div>
+
+            <div class="DA-box">
+                <div class="DA-box-mod">
+                    <img src="Image/Bike-sales-dashboard.png" class="imgsizer">
+                    <h2>Bike Sales Dashboard Project</h2>
+                    <p>Creating a data visualization, exploration and cleaning project in Excel </p>
+                    <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/raw/main/Excel%20Project%20Dataset.xlsx"><button class="btn"><i class="fa-brands fa-github tab-mod"></i>Github</button></a>
+                </div>
+            </div>
+
+            <div class="DA-box">
+                <div class="DA-box-mod">
+                    <img src="Image/Philippines-Typhoon-DashBoard.png" class="imgsizer">
+                    <h2>Philippines Typhoon Dashboard Project</h2>
+                    <p>Creating a data visualization, exploration and cleaning project in Excel </p>
+                    <a href="https://github.com/mombaygheve97/PortfolioProject-Excel/raw/main/typhonn-impacts.xlsx"><button class="btn"><i class="fa-brands fa-github tab-mod"></i>Github</button></a>
+                </div>
+            </div>
+
+            <div class="DA-box">
+                <div class="DA-box-mod">
+                    <img src="Image/tweet-post-data-vis-project.png" class="imgsizer">
+                    <h2>Twitter Post Data Analytics Dashboard Project</h2>
+                    <p>Creating a data visualization using Tableau, SQL for data cleaning and analysis </p>
+                    <a href="https://public.tableau.com/app/profile/gheve.ezekiel.mombay/viz/TweetPost-DataVisualisationProject/Dashboard1"><button class="btn"><i class="cib-tableau tab-mod"></i>Tableau</button></a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!---- Footer starts---->
-        <footer>
-            <p>© Gheve Ezekiel P. Mombay 2022</p>
-        </footer>
-    </body>
+    <!-- Certificates section design-->
+    <section class="Certificates" id="cert">
+        <h2 class="heading">Certificates</h2>
+
+        <div class="cert-container">
+            <div class="cert-box">
+                <a href="File/Coursera-QJHHQHYPBRYV.pdf"><img src="Image/coursera-data-analytics-course1.jpeg" class="coursera"></a>
+            </div>
+
+            <div class="cert-box">
+                 <a href="File/Coursera-EZ95QPWA53KV.pdf"><img src="Image/coursera-data-analytics-course2.jpeg" class="coursera"></a>
+            </div>
+
+            <div class="cert-box">
+                 <a href="File/Coursera-WKZQVBKJRW7X.pdf"><img src="Image/coursera-data-analytics-course3.jpeg" class="coursera"></a>
+            </div>
+
+            <div class="cert-box">
+                <a href="File/Java_Programmig-Beginner_Guide_2022.pdf"><img src="Image/Java_Programmig-Beginner_Guide_2022.jpg" class="udemy"></a>
+            </div>
+
+            <div class="cert-box">
+                   <a href="File/MySQL_Database_Development_Mastery_Certificate.pdf"><img src="Image/MySQL_Database_Development_Mastery_Certificate.jpg" class="udemy"></a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
