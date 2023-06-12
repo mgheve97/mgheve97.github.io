@@ -101,3 +101,16 @@
     }
 
 }
+
+/* Mobile Footer Screen */
+@media only screen and (max-width: 600px){
+
+    .footer-container{
+        padding: 2px;
+    }
+
+    .footer-container p{
+        font-size: 13px;
+    }
+
+}
