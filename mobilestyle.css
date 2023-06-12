@@ -1,0 +1,103 @@
+/* Mobile Nav */
+@media only screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+}
+
+/* mobile homepage */
+@media only screen and (max-width: 600px) {
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* mobile home screen */
+@media only screen and (max-width: 600px) {
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content h3{
+        font-size: 18px;
+    }
+    .home-content h1{
+      font-size: 20px;
+    }
+    .home-content p{
+        font-size: 10px;
+    }
+    .home-img img{
+        height: 100px;
+        width: 110px;
+    }
+    .home-content .btn{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+/* mobile About screen*/
+@media only screen and (max-width: 600px){
+    #about{
+        margin-bottom: 30px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .whatido-container{
+        flex-direction: column;
+    }
+    .whatido-box{
+        height: auto;
+        width: auto;
+    }
+
+}
+
+/* Mobile Skills screen */
+@media only screen and (max-width: 600px){
+
+    .proficient-skill-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Projects Screen */
+@media only screen and (max-width: 600px){
+
+    .DA-container{
+        grid-template-columns: 1fr;
+    }
+
+    .imgsizer{
+        height: 200px;
+        width: 300px;
+    }
+
+}
+
+/* Mobile Certificate Screen */
+@media only screen and (max-width: 600px){
+
+    .coursera{
+        height: 200px;
+        width: 300px;
+    }
+
+    .udemy{
+        height: 300px;
+        width: 300px;
+    }
+
+}
