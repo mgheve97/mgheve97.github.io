@@ -181,7 +181,7 @@ span{
     flex-direction: column;
     /* background: var(--third-bg-color); */
     padding: 40px;
-    border-radius: 20px; 
+    border-radius: 10px; 
     text-align: center;
     border: 2px solid var(--bg-color);
     height: 100%;
@@ -238,7 +238,7 @@ span{
     justify-content: center;
     align-items: center;
     /* background: var(--third-bg-color); */
-    border-radius: 20px; 
+    border-radius: 10px; 
     text-align: center;
     border: 2px solid var(--bg-color);
     border-color: var(--main-color);
@@ -367,7 +367,7 @@ span{
 }
 
 .udemy{
-    border-radius: 5px; 
+    border-radius: 10px; 
     height: 800px;
     width: 1000px;
 }
