@@ -74,6 +74,7 @@ section{
 
 .btn {
     display: inline-block;
+    text-align: center;
     padding: 8px 40px;
     background: var(--main-color);
     border-radius: 10px;
@@ -323,7 +324,10 @@ span{
 }
 
 .DA-box-mod .btn{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 45px;
     margin-bottom: 50px;
     margin-left: 40px;
@@ -335,7 +339,7 @@ span{
 
 .tab-mod{
     font-size: 30px;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 
