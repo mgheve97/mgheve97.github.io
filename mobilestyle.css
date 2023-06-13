@@ -83,6 +83,23 @@
     .imgsizer{
         height: 200px;
         width: 300px;
+        margin-bottom: 25px;
+    }
+
+    .DA-box-mod h2{
+        font-size: 18px;
+        padding: 0 30px;
+    }
+
+    .DA-box-mod p{
+        font-size: 10px;
+        padding: 0 30px;
+    }
+
+    .DA-box-mod .btn{
+        margin-bottom: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
 }
