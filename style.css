@@ -374,12 +374,5 @@ span{
 
 .footer-container p{
     font-size: 18px;
-}
-
-.info{
-    margin-top: 10px;
-}
-
-.home-content i{
-    font-size: 20px;
+    padding-top: 5px;
 }
