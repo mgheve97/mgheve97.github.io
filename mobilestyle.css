@@ -123,7 +123,9 @@
 @media only screen and (max-width: 600px){
 
     .footer-container{
-        padding: 2px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
     }
 
     .footer-container p{
